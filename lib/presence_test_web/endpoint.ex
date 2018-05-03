@@ -35,7 +35,7 @@ defmodule PresenceTestWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_presence_test_key",
-    signing_salt: "TQ+g2nyY"
+    signing_salt: "y5D95Nxa"
 
   plug PresenceTestWeb.Router
 

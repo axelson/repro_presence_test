@@ -5,14 +5,10 @@
 # is restricted to this project.
 use Mix.Config
 
-# General application configuration
-config :presence_test,
-  ecto_repos: [PresenceTest.Repo]
-
 # Configures the endpoint
 config :presence_test, PresenceTestWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "8Cs/pB93vyz+YAYshLfPd9AINPXLJXCb9l5rlePdUU646OfUkXp0c8aNlfhMcdWU",
+  secret_key_base: "V147pPl0r/oGMEx6VVEswv8Rhz+HsEfTgSfRWpmEM/airGBg2ujpVBCe5JT5cwja",
   render_errors: [view: PresenceTestWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: PresenceTest.PubSub,
            adapter: Phoenix.PubSub.PG2]

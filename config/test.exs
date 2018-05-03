@@ -8,12 +8,3 @@ config :presence_test, PresenceTestWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :presence_test, PresenceTest.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "presence_test_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
