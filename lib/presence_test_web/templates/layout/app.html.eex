@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <title>Hello PresenceTest!</title>
+    <script src="<%= static_path(@conn, "/js/phoenix.js") %>"></script>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 

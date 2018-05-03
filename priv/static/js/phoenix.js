@@ -1428,4 +1428,16 @@ var Timer = function () {
   return Timer;
 }();
 
+if (typeof(Socket) !== 'undefined') {
+  let socket = new Socket("/socket", {params: {userToken: "123"}})
+  socket.connect()
+
+  let channel = socket.channel("user:lobby", {})
+  channel.join()
+    .receive("ok", resp => console.log('joined!', resp))
+    .receive("error", resp => console.log('unable to join', resp))
+} else {
+  console.log('no socket!')
+}
+
 })));

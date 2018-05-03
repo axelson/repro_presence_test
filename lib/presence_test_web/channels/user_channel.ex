@@ -15,7 +15,7 @@ defmodule PresenceTestWeb.UserChannel do
 
   def handle_info(:after_join, socket) do
     push socket, "presence_state", Presence.list(socket)
-    {:ok, _} = Presence.track(socket, socket.assigns.user_id, %{
+    {:ok, _} = Presence.track(socket, 42, %{
       online_at: inspect(System.system_time(:seconds))
     })
     {:noreply, socket}
